@@ -1,0 +1,3 @@
+ds_form_media:
+    resource: "@DSFormMediaBundle/Resources/config/routing.yml"
+    prefix:   /

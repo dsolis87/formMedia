@@ -1,0 +1,10 @@
+services:
+    media.type:
+        class:    DS\FormMediaBundle\Form\Type\MediaType
+        arguments: [@media.service]
+        tags:
+            - { name: form.type, alias: media }
+
+    media.service:
+        class: DS\FormMediaBundle\DependencyInjection\Services\MediaService
+        arguments: []

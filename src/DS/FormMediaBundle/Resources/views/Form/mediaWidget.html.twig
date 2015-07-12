@@ -1,0 +1,13 @@
+{% block media_widget %}
+    {% spaceless %}
+        FULL FILE: <img src="{{ fullFile }}" />
+        <br />
+        <br />
+        {{ form_label(form) }}
+        <img src="{{ thumb }}" />
+        CONTROLS
+        {#<div hidden="hidden">#}
+            {{ form_widget(form) }}
+        {#</div>#}
+    {% endspaceless %}
+{% endblock %}
